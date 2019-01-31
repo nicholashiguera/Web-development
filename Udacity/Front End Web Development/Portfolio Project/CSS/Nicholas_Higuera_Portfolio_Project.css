@@ -1,0 +1,172 @@
+body{
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  font-family: 'Major Mono Display', monospace;
+}
+
+img{
+  max-width: 100%;
+}
+
+p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+/* Header Styling */
+
+.header{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  max-height: 200px;
+  padding: 10px;
+}
+
+.logo{
+  max-height: 190px;
+}
+.header__logo{
+  width: 30%;
+
+}
+
+.header__inner{
+  width: 70%;
+  height: 190px;
+  background: aliceblue;
+  order: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.header__name{
+  width: 50%;
+}
+
+/* Main Styling */
+.content__description {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Section 'content__description' Styling */
+
+.content_one {
+  grid-area: top;
+}
+
+.content_two {
+  grid-area: middle;
+}
+
+.content_three {
+  grid-area: bottom;
+}
+
+@media screen and (min-width: 600px) {
+  .content__list {
+      order: 2;
+      width: 40%;
+  }
+
+  .content__image {
+      order: 0;
+      width: 90%;
+  }
+
+  .content__text {
+      order: 1;
+      width: 40%;
+  }
+
+  .portfolio__content {
+    width: 95%;
+  }
+
+  .portfolio__work{
+    grid-template-areas:
+    "top"
+    "middle"
+    "bottom";
+  }
+
+}
+
+@media screen and (min-width: 1000px) {
+  .content__list {
+      order: 2;
+      width: 20%;
+  }
+
+  .content__image {
+      order: 1;
+      width: 50%;
+      padding: 5px;
+  }
+
+  .content__text {
+      order: 0;
+      width: 20%;
+  }
+
+}
+
+
+/* Section 'portfolio__content' Styling */
+
+.portfolio__heading {
+  padding: inherit;
+  max-width: 100%;
+}
+
+.portfolio__content{
+  width: 100%;
+  display: block;
+  padding: 10px;
+
+}
+
+.content_one, .content_two, .content_three{
+  display: inline-grid;
+  padding: 5px;
+  box-shadow: 3px 5px 10px -5px;
+  border-radius: 10px;
+  width: 32%;
+}
+
+/* Footer Styling */
+
+.footer_nav{
+  padding: 10px;
+  display: block;
+  width: 100%;
+
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
