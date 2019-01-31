@@ -49,6 +49,12 @@ p{
 }
 
 /* Main Styling */
+.line{
+  height: 1px;
+  background: #333;
+}
+/* Section 'content__description' Styling */
+
 .content__description {
   padding: 10px;
   display: flex;
@@ -56,67 +62,6 @@ p{
   justify-content: space-around;
 }
 
-/* Section 'content__description' Styling */
-
-.content_one {
-  grid-area: top;
-}
-
-.content_two {
-  grid-area: middle;
-}
-
-.content_three {
-  grid-area: bottom;
-}
-
-@media screen and (min-width: 600px) {
-  .content__list {
-      order: 2;
-      width: 40%;
-  }
-
-  .content__image {
-      order: 0;
-      width: 90%;
-  }
-
-  .content__text {
-      order: 1;
-      width: 40%;
-  }
-
-  .portfolio__content {
-    width: 95%;
-  }
-
-  .portfolio__work{
-    grid-template-areas:
-    "top"
-    "middle"
-    "bottom";
-  }
-
-}
-
-@media screen and (min-width: 1000px) {
-  .content__list {
-      order: 2;
-      width: 20%;
-  }
-
-  .content__image {
-      order: 1;
-      width: 50%;
-      padding: 5px;
-  }
-
-  .content__text {
-      order: 0;
-      width: 20%;
-  }
-
-}
 
 
 /* Section 'portfolio__content' Styling */
@@ -139,6 +84,79 @@ p{
   box-shadow: 3px 5px 10px -5px;
   border-radius: 10px;
   width: 32%;
+  height: 350px;
+}
+
+@media screen and (max-width:600px) {
+  .content_one, .content_two, .content_three{
+    display: grid;
+    width: 95%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width:600px) and (max-width:950px) {
+
+  .content_one{
+    width: 30%;
+    height: auto;
+    margin-left: 10px;
+  }
+
+  .content_two, .content_three{
+    width: 30%;
+    height: auto;
+    margin-left: 10px;
+  }
+
+  .content_one p, .content_two p, .content_three p{
+    display: none;
+  }
+
+  .portfolio__content {
+    width: 98%;
+  }
+
+}
+
+@media screen and (min-width: 600px) {
+  .content__list {
+      order: 2;
+      width: 40%;
+  }
+
+  .content__image {
+      order: 0;
+      width: 90%;
+  }
+
+  .content__text {
+      order: 1;
+      width: 40%;
+  }
+
+  .portfolio__content {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .content__list {
+      order: 2;
+      width: 20%;
+  }
+
+  .content__image {
+      order: 1;
+      width: 50%;
+      padding: 5px;
+  }
+
+  .content__text {
+      order: 0;
+      width: 20%;
+  }
+
 }
 
 /* Footer Styling */
@@ -147,7 +165,7 @@ p{
   padding: 10px;
   display: block;
   width: 100%;
-
+  text-align: center;
 }
 .fa {
   padding: 20px;
