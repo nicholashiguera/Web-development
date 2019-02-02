@@ -97,20 +97,16 @@ p{
 
 @media screen and (min-width:600px) and (max-width:950px) {
 
-  .content_one{
-    width: 30%;
-    height: auto;
-    margin-left: 10px;
+  .portfolio__work {
+    display: grid;
+    text-align: center;
+    max-width: 95%;
   }
 
-  .content_two, .content_three{
-    width: 30%;
+  .content_one, .content_two, .content_three{
+    width: 60%;
     height: auto;
-    margin-left: 10px;
-  }
-
-  .content_one p, .content_two p, .content_three p{
-    display: none;
+    margin-left: 150px;
   }
 
   .portfolio__content {
