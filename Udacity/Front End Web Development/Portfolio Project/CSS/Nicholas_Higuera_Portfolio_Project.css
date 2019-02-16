@@ -1,8 +1,15 @@
-body{
-  box-sizing: border-box;
+html{
+  max-width: 97%;
 }
 
-h1, h2, h3 {
+body{
+  box-sizing: border-box;
+  max-width: 97%;
+}
+
+h1,
+h2,
+h3 {
   font-family: 'Major Mono Display', monospace;
 }
 
@@ -78,7 +85,9 @@ p{
 
 }
 
-.content_one, .content_two, .content_three{
+.content_one,
+.content_two,
+.content_three{
   display: inline-grid;
   padding: 5px;
   box-shadow: 3px 5px 10px -5px;
